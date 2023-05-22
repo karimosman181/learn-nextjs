@@ -5,6 +5,8 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "@/components/skills";
+import Experience from "@/components/Experience";
 
 const AnimatedNumbers = ({ values }) => {
   const ref = useRef(null);
@@ -92,7 +94,6 @@ const about = () => {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className=" inline-block text-7xl font-bold">
-                  {" "}
                   <AnimatedNumbers values={4} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
@@ -101,6 +102,8 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
