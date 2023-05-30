@@ -7,8 +7,10 @@ const Skill = ({ name, x, y }) => {
       className="flex items-center justify-center  rounded-full font-semibold bg-dark text-light p-8  shadow-dark cursor-pointer px-6 py-3 absolute "
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
-      animate={{ x: x, y: y }}
+      whileInView={{ x: x, y: y }}
       transition={{ duration: 1.5 }}
+      //animate once uncomment below
+      // viewport={{once:true}}
     >
       {name}
     </motion.div>
