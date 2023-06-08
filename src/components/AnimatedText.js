@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-//! FIX staggerChildren animation !!!
 const quote = {
   initial: { opacity: 0 },
   animate: {
